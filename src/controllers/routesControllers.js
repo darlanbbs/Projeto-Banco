@@ -13,7 +13,7 @@ function getAccounts(req, res) {
     return res.status(400).send("É nescessário informar a senha do banco!");
   }
 
-  if (senha_banco === "Cubos123Bank") {
+  if (senha_banco === "Bank") {
     return res.status(200).send(contas);
   }
   return res.status(400).send("A senha do banco informada é inválida!");
